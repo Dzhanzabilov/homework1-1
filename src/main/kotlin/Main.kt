@@ -1,7 +1,18 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    //init
+    val list = mutableListOf<Animals>()
+    //
+    val tiger = Predator(name = "tiger")
+    list.add(tiger)
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
-}
+    val volf = Predator("volf")
+    list.add(volf)
+
+    val cow = Herbivorous("cow")
+    list.add(cow)
+
+    val sheep = Herbivorous("sheep")
+    list.add(sheep)
+
+    println(list)
+  }
